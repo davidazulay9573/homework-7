@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let  onamber = prompt("הקש בבקשה מספר");
+      let  tonumber = prompt("הקש בבקשה מספר נוסף");
+      let  operator = prompt("בחר + - * / אחת מהאופציות");
+   
+      if(isNaN(onamber)){
+        alert("הקש מספר בלבד");
+        
+     }else if(isNaN(tonumber)){
+        alert("הקש מספר בלבד");
+     }
+     else{
+        let tochah;
+        if (operator == '+'){
+        tochah = +onamber + +tonumber;
+
+        }
+        else if(operator == '-'){
+            tochah = onamber - tonumber;
+
+        }
+         else if(operator == '*'){
+            tochah = onamber * tonumber;
+
+        }
+        else if(operator == '/'){
+            tochah = onamber / tonumber;
+       
+        }else{
+            alert("לא בחרת אופרטור מתאים")
+        }
+        
+        alert(tochah);
+        
+            
+    
+    } 
+       
+      
+    </script>
+</body>
+</html>
